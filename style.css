@@ -1,0 +1,66 @@
+body{
+	margin:0;
+}
+.navbar{
+	display: flex;
+	background-color:  #1f1205;
+}
+.navbar div{
+	margin-top: 31px;
+}
+#logo{
+	width:10%;
+	margin-left: 70px;
+	margin-right: 55%;
+}
+#btn{
+	margin-left: 15px;
+	margin-right: 15px;
+	padding: 10px;
+	background-color:#e29950;
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+	border-radius: 8px;
+}
+.bdy{
+	background-image: url("img/6.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height:570px;
+    margin-top: 2px;
+    
+}
+.bdy div{
+	text-align: center;
+}
+.menu{
+	text-align:center;
+	background-image: url("img/bg1.jfif");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+}
+.menu1{
+	display:flex;
+}
+.menu1 div img{
+	width:80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
