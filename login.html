@@ -4,13 +4,23 @@
     
     <link rel="stylesheet" href="style1.css">
     <title>Indian Flavours</title>
+    <script type="text/javascript">
+      function loginchk(){
+        var id="abhijeetranawat13@gmail.com";
+        var pass="abc@123";
+        if(document.getElementById("Login").value.trim()==id && document.getElementById("password").value==pass){
+                window.alert("Login Successful");
+                window.open("index.html")
+              }
+        else{
+          window.alert("Wrong Credentials");
+        }
+
+      }
+    </script>
 </head>
 <body>
-
-
-
-    
-                   <nav class="navbar">
+    <nav class="navbar">
         <img id="logo" src="img\logo1.jpg">
         <div>
             <a id="btn" href="#">About</a>
@@ -18,26 +28,23 @@
             
         </div>
      </nav>
-                
+     <div class="wrapper fadeInDown">
+        <div id="formContent">
       
-        
-
-
-  
-                <div class="wrapper fadeInDown">
-                    <div id="formContent">
-                  
-                      
-                      <form>
-                        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-                        <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-                        <input type="submit" class="fadeIn fourth" value="Log In">
-                      </form>
-                     <div id="formFooter">
-                        <a class="underlineHover" href="#">Forgot Password?</a>
-                      </div>
-                  
-                    </div>
+          
+          <form action="signup.html">
+            </br>
+            <input type="text" id="Login" class="fadeIn second" name="login" placeholder="login">
+            <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
+            </br>
+            <input  type="button" class="fadeIn fourth" onclick="loginchk()" value="Log In">
+            <input type="submit" class="fadeIn fourth" value="Sign Up">
+          </form>
+         <div id="formFooter">
+            <a class="underlineHover" href="#">Forgot Password?</a>
+          </div>
+      
+        </div>
            
     </div>
 </body>

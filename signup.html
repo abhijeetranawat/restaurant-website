@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="style1.css">
+    <title>Indian Flavours</title>
+    <script type="text/javascript">
+      function signupchk(){
+        
+        if(document.getElementById("password").value==document.getElementById("passwordc").value){
+                window.alert("Signup Successful");
+                window.open("Login.html")
+              }
+        else{
+          window.alert("Password do not match");
+        }
+
+      }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <img id="logo" src="img\logo1.jpg">
+        <div>
+            <a id="btn" href="#">About</a>
+            <a id="btn" href="index.html">Home</a>
+            
+        </div>
+     </nav>
+     <div class="wrapper fadeInDown">
+        <div id="formContent">
+      
+          
+          <form action="login.html">
+            </br>
+            <input type="text" id="Fname" class="fadeIn second" name="Fname" placeholder="First Name">
+            <input type="text" id="Lname" class="fadeIn second" name="Lname" placeholder="Last Name">
+            <label>Gender:</label></br>
+            <input type="radio" id="male" name="gender" value="male">Male
+            <input type="radio" id="female" name="gender" value="female">Female
+            <input type="text" id="email" class="fadeIn second" name="email" placeholder="E-mail">
+            <input type="password" id="password" class="fadeIn third" name="login" placeholder="Password">
+            <input type="password" id="passwordc" class="fadeIn third" name="login" placeholder="Confirm password">
+            <input type="button" class="fadeIn fourth" onclick="signupchk()" value="Sign Up">
+            <input  type="submit" class="fadeIn fourth"  value="Log In">
+          </form>
+         
+      
+        </div>
+           
+    </div>
+</body>
+</html>
